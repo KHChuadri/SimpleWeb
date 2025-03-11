@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/css/all.css">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+        :root{
+            --green: #27ae60;
+            --black: #192a56;
+            --light-color: #666;
+            --box-shadow: 0 5px 15px rgba(0,0,0,-1);
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            text-decoration:0;
+            outline:none;
+            font-family:'Nunito',sans-serif;
+            box-sizing:border-box;
+            color:black;
+        }
+
+        header{
+            display:flex;
+            flex-direction:row;
+            min-width:100%;
+            justify-content:space-between;
+            border: 1px solid rgba(0,0,0,.1);
+            padding:10px 100px;
+        }
+
+        .logo{
+            font-size: 32px;
+            font-weight: bold;
+            display:flex;
+            align-items: center;
+        }
+
+        .logo i{
+            color:var(--green);
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-evenly;
+            /* border:1px solid black; */
+        }
+
+        nav a{
+            margin:10px;
+            border-radius: 5px;
+            padding:10px;
+        }
+
+        .icons{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-around;
+            max-width:400px;
+        }
+
+        .icons i{
+            border-radius:100%;
+            font-size: 20px;
+            margin:10px;
+            background-color: rgba(0,0,0,.1);
+            padding:10px;
+            height: 40px;
+            width: 40px;
+        }
+
+        .navbar a.active, nav a:hover{
+            background-color:#27ae60;
+            color:white;
+        }
+    </style>
+    <header>
+        <div  class = "logo"><a href="#"><i class = "fas fa-utensils"></i>Resto Cafe</a></div>
+        <div class = "menus">
+            <nav class = "navbar">
+                <a href="../navbar/navbar.html">Home</a>
+                <a href="../Popular Dishes/menu.html" class="active">Dishes</a>
+                <a href="../Why Choose Us/foodresto.html">About</a>
+                <a href="../Dish Menu/dish.html">Menu</a>
+                <a href="../What They Say/customersreview.html">Review</a>
+                <a href="../Free and Fast/ordernow.html">Order</a>
+            </nav>
+        </div>
+        <div class = "icons">
+            <i class="fas fa-cart-plus"></i>
+            <i class = "fas fa-search"></i>
+            <i class = "fas fa-user"></i>
+        </div>
+    </header>
+    <div class = "container">
+        <div class = "first">
+            <h4>Our dishes</h4>
+            <h2>POPULAR DISHES</h2>
+        </div>
+        <div class = "box-container">
+            <div class = "box">
+                <div class = "content">
+                    <img src="food/dish-1.png" alt="">
+                    <div class = "content-details">
+                        <h1>Tasty Food</h1>
+                        <div class = "stars">
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star-half-alt"></i>
+                        </div>
+                        <div class = "price">$15.99</div>
+                        <a href="#" class = "button">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "box">
+                <div class = "content">
+                    <img src="food/dish-2.png" alt="">
+                    <div class = "content-details">
+                        <h1>Tasty Food</h1>
+                        <div class = "stars">
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star-half-alt"></i>
+                        </div>
+                        <div class = "price">$15.99</div>
+                        <a href="#" class = "button">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class = "box">
+                <div class = "content">
+                    <img src="food/dish-3.png" alt="">
+                    <div class = "content-details">
+                        <h1>Tasty Food</h1>
+                        <div class = "stars">
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star-half-alt"></i>
+                        </div>
+                        <div class = "price">$15.99</div>
+                        <a href="#" class = "button">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class = "box">
+                <div class = "content">
+                    <img src="food/dish-4.png" alt="">
+                    <div class = "content-details">
+                        <h1>Tasty Food</h1>
+                        <div class = "stars">
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star-half-alt"></i>
+                        </div>
+                        <div class = "price">$15.99</div>
+                        <a href="#" class = "button">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class = "box">
+                <div class = "content">
+                    <img src="food/dish-5.png" alt="">
+                    <div class = "content-details">
+                        <h1>Tasty Food</h1>
+                        <div class = "stars">
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star-half-alt"></i>
+                        </div>
+                        <div class = "price">$15.99</div>
+                        <a href="#" class = "button">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "box">
+                <div class = "content">
+                    <img src="food/dish-6.png" alt="">
+                    <div class = "content-details">
+                        <h1>Tasty Food</h1>
+                        <div class = "stars">
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star"></i>
+                            <i class = "fas fa-star-half-alt"></i>
+                        </div>
+                        <div class = "price">$15.99</div>
+                        <a href="#" class = "button">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 200 x 154.54 -->

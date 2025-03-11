@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/css/all.css">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+        :root{
+            --green: #27ae60;
+            --black: #192a56;
+            --light-color: #666;
+            --box-shadow: 0 5px 15px rgba(0,0,0,-1);
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            text-decoration:0;
+            outline:none;
+            font-family:'Nunito',sans-serif;
+            box-sizing:border-box;
+            color:black;
+        }
+
+        header{
+            display:flex;
+            flex-direction:row;
+            min-width:100%;
+            justify-content:space-between;
+            border: 1px solid rgba(0,0,0,.1);
+            padding:10px 100px;
+        }
+
+        .logo{
+            font-size: 32px;
+            font-weight: bold;
+            display:flex;
+            align-items: center;
+        }
+
+        .logo i{
+            color:var(--green);
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-evenly;
+            /* border:1px solid black; */
+        }
+
+        nav a{
+            margin:10px;
+            border-radius: 5px;
+            padding:10px;
+        }
+
+        .icons{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-around;
+            max-width:400px;
+        }
+
+        .icons i{
+            border-radius:100%;
+            font-size: 20px;
+            margin:10px;
+            background-color: rgba(0,0,0,.1);
+            padding:10px;
+            height: 40px;
+            width: 40px;
+        }
+
+        .navbar a.active, nav a:hover{
+            background-color:#27ae60;
+            color:white;
+        }
+    </style>
+    <header>
+        <div  class = "logo"><a href="#"><i class = "fas fa-utensils"></i>Resto Cafe</a></div>
+        <div class = "menus">
+            <nav class = "navbar">
+                <a href="../navbar/navbar.html">Home</a>
+                <a href="../Popular Dishes/menu.html">Dishes</a>
+                <a href="../Why Choose Us/foodresto.html">About</a>
+                <a href="../Dish Menu/dish.html" class="active">Menu</a>
+                <a href="../What They Say/customersreview.html">Review</a>
+                <a href="../Free and Fast/ordernow.html">Order</a>
+            </nav>
+        </div>
+        <div class = "icons">
+            <i class="fas fa-cart-plus"></i>
+            <i class = "fas fa-search"></i>
+            <i class = "fas fa-user"></i>
+        </div>
+    </header>
+    <div class = "container">
+        <div class = "dish">
+            <div class = "content">
+                <div class = "content-detail">
+                    <span>Our Special Dish</span>
+                    <h2>Spicy Noodles</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic blanditiis, voluptatem officia ducimus iste recusandae corporis atque soluta illum expedita dolores sapiente inventore itaque quos! Adipisci assumenda ex nulla aliquid sint provident repellendus voluptatum a temporibus! Vitae aut laboriosam consequatur veritatis quam tempore corrupti iure illum sint ipsa aspernatur, ducimus consectetur quia mollitia atque deserunt sit est. Perferendis sequi amet, similique ratione vitae rem unde repudiandae quidem maiores mollitia nam sunt sit quibusdam commodi qui delectus fugit dolor cum at natus dicta illum. Quae, maiores eos. Accusantium beatae tempore inventore earum ullam perspiciatis unde voluptates qui culpa, dolores nobis doloribus.</p>
+                    <a class = "btn" href="#"><i class="fas fa-cart-plus"></i>Order Now</a>
+                </div>
+            </div>
+            <div><img src="food/home-img-1.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class = "container">
+        <div class = "dish">
+            <div class = "content">
+                <div class = "content-detail">
+                    <span>Our Special Dish</span>
+                    <h2>Fried Chicken</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic blanditiis, voluptatem officia ducimus iste recusandae corporis atque soluta illum expedita dolores sapiente inventore itaque quos! Adipisci assumenda ex nulla aliquid sint provident repellendus voluptatum a temporibus! Vitae aut laboriosam consequatur veritatis quam tempore corrupti iure illum sint ipsa aspernatur, ducimus consectetur quia mollitia atque deserunt sit est. Perferendis sequi amet, similique ratione vitae rem unde repudiandae quidem maiores mollitia nam sunt sit quibusdam commodi qui delectus fugit dolor cum at natus dicta illum. Quae, maiores eos. Accusantium beatae tempore inventore earum ullam perspiciatis unde voluptates qui culpa, dolores nobis doloribus.</p>
+                    <a class = "btn" href="#">Order Now</a>
+                </div>
+            </div>
+            <div><img src="food/home-img-2.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class = "container">
+        <div class = "dish">
+            <div class = "content">
+                <div class = "content-detail">
+                    <span>Our Special Dish</span>
+                    <h2>Hot Pizza</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic blanditiis, voluptatem officia ducimus iste recusandae corporis atque soluta illum expedita dolores sapiente inventore itaque quos! Adipisci assumenda ex nulla aliquid sint provident repellendus voluptatum a temporibus! Vitae aut laboriosam consequatur veritatis quam tempore corrupti iure illum sint ipsa aspernatur, ducimus consectetur quia mollitia atque deserunt sit est. Perferendis sequi amet, similique ratione vitae rem unde repudiandae quidem maiores mollitia nam sunt sit quibusdam commodi qui delectus fugit dolor cum at natus dicta illum. Quae, maiores eos. Accusantium beatae tempore inventore earum ullam perspiciatis unde voluptates qui culpa, dolores nobis doloribus.</p>
+                    <a class = "btn" href="#">Order Now</a>
+                </div>
+            </div>
+            <div><img src="food/home-img-3.png" alt=""></div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

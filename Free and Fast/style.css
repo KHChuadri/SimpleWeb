@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family:'Nunito',sans-serif;
+    text-decoration:none;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+}
+
+:root{
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 5px 15px rgba(0,0,0,-1);
+}
+
+.container{
+    background-color:lightgray;
+    width:90%;
+    max-width:1200px;
+    padding:10px;
+    margin:20px auto;
+}
+
+section{padding:10px}
+
+.sub-heading{
+    text-align: center;
+    color:var(--green);
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.inputBox{
+    display:flex;
+    flex-direction:row;
+}
+
+.order form{
+    max-width:900px;
+    border-radius:5px;
+    box-shadow: var(--box-shadow);
+    border:.1px solid rgba(0, 0, 0, .2);
+    background:#fff;
+    padding:15px;
+    margin:0 auto;
+}
+
+.inputBox{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.order form .inputBox .input span{
+    display:block;
+    padding:5px 0;
+    font-size:18px;
+    color: var(--light-color)
+}
+
+.order form .inputBox .input{
+    width:49%
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+    background:#eee;
+    border-radius:5px;
+    padding:10px;
+    font-size:25px;
+    color:var(--black);
+    text-transform:none;
+    margin-bottom:10px;
+    width:100%;
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    border:1px solid var(--green)
+}
+
+.order form .inputBox .input textarea{
+    height:200px;
+    resize:none;
+}
+
+.order form .inputBox .input input::placeholder,
+.order form .inputBox .input input[type="datetime-local"],
+.order form .inputBox .input textarea::placeholder{
+    font-size:20px;
+}
+
+.order form btn{
+    margin-top:0;
+}
+
+.btn{
+    margin-top:15px;
+    display:inline-block;
+    font-size:16px;
+    color:#fff;
+    background:var(--black);
+    border-radius:5px;
+    cursor:pointer;
+    padding: 10px 25px;
+}
+
+.btn:hover{
+    background-color: var(--green);
+}
